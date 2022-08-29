@@ -1,0 +1,17 @@
+cabal-version:      3.0
+name:               megaparsec-bug
+version:            0
+license:            MIT
+license-file:       LICENSE
+author:             Tom Ellis
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+executable megaparsec-bug
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base, bytestring, megaparsec
+    hs-source-dirs:   app
+    default-language: Haskell2010
